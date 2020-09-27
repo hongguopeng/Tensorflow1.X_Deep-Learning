@@ -25,7 +25,7 @@ for i , img_file in enumerate(img_list):
 
     w = img_resize.shape[0]
     img_mosaic = img_resize.copy()
-    # 將影像加上馬賽克，增加a可以增加馬賽克單元格的尺寸
+    # 將影像加上馬賽克，增加a可以減少馬賽克單元格的尺寸
     a = 6
     for j in range(int(1 / 4 * w), int(3 / 4 * w), a):
         for k in range(int(1 / 4 * w), int(3 / 4 * w), a):
